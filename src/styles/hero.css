@@ -1,0 +1,412 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: calc(100% - 8px);
+  height: 610px;
+  margin: 0 auto;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   HERO OVERLAY
+========================= */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.97) 0%,
+      rgba(255, 255, 255, 0.94) 27%,
+      rgba(255, 255, 255, 0.72) 42%,
+      rgba(255, 255, 255, 0.18) 62%,
+      rgba(255, 255, 255, 0) 78%
+    );
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  width: 530px;
+  margin-left: 60px;
+
+  position: relative;
+  z-index: 3;
+}
+
+/* =========================
+   HERO LABEL
+========================= */
+
+.hero-label {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+  margin-bottom: 18px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.hero-label i {
+  width: 55px;
+  height: 1px;
+
+  margin-left: 4px;
+
+  background: #94a3b8;
+}
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero-title {
+  margin: 0 0 15px;
+
+  color: #0f172a;
+
+  font-size: 47px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  white-space: pre-line;
+}
+
+/* =========================
+   TYPING WRAPPER
+========================= */
+
+.typing-wrapper {
+  display: inline;
+}
+
+/* =========================
+   TYPING CURSOR
+========================= */
+
+.typing-cursor {
+  display: inline-block;
+
+  width: 3px;
+  height: 0.9em;
+
+  margin-left: 5px;
+
+  vertical-align: middle;
+
+  background: #2563eb;
+
+  animation: cursor-blink 0.7s infinite;
+}
+
+@keyframes cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =========================
+   HERO DESCRIPTION
+========================= */
+
+.hero-content > p {
+  width: 470px;
+
+  margin: 0 0 22px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.hero-benefits {
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+
+  margin-bottom: 22px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #1e293b;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+.benefit-icon {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+}
+
+.chart-icon {
+  color: #2563eb;
+}
+
+.shield-icon {
+  color: #16a34a;
+}
+
+.zap-icon {
+  color: #7c3aed;
+}
+
+.cloud-icon {
+  color: #f59e0b;
+}
+
+/* =========================
+   LEARN MORE BUTTON
+========================= */
+
+.learn-more-btn {
+  height: 42px;
+
+  padding: 0 9px 0 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 20px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  background: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+
+  transition: 0.2s;
+}
+
+.learn-more-btn svg {
+  width: 27px;
+  height: 27px;
+
+  padding: 5px;
+
+  border-radius: 50%;
+
+  color: #2563eb;
+
+  background: #ffffff;
+}
+
+.learn-more-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   EDUCATION CARD
+========================= */
+
+.hero-card {
+  width: 230px;
+
+  padding: 16px;
+
+  position: absolute;
+
+  top: 35px;
+  right: 70px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+
+  z-index: 4;
+}
+
+.hero-card-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  color: #2563eb;
+
+  background: #dbeafe;
+}
+
+.hero-card h3 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 12px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+.hero-card p {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  line-height: 1.45;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .hero-content {
+    margin-left: 40px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-card {
+    right: 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    height: 700px;
+
+    background-position: center;
+  }
+
+  .hero-content {
+    width: 90%;
+
+    margin-left: 30px;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0.65)
+      );
+  }
+
+  .hero-card {
+    top: 30px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 750px;
+
+    background-position: 60% center;
+  }
+
+  .hero-content {
+    width: calc(100% - 40px);
+
+    margin-left: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-content > p {
+    width: 100%;
+  }
+
+  .hero-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .hero-card {
+    width: 220px;
+
+    top: 25px;
+    right: 20px;
+  }
+
+  .typing-cursor {
+    width: 2px;
+  }
+}

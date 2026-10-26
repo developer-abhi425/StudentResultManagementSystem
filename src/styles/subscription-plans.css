@@ -1,0 +1,1387 @@
+.subscription-page {
+  min-height: 100vh;
+  background: #f8fbff;
+  color: #172033;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.subscription-header {
+  width: 100%;
+  min-height: 78px;
+  padding: 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5edf6;
+}
+
+.subscription-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.subscription-logo {
+  width: 62px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.subscription-brand h2 {
+  margin: 0;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.subscription-brand p {
+  margin: 3px 0 0;
+
+  font-size: 12px;
+  color: #64748b;
+}
+
+.secure-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 13px;
+
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+
+  background: #f8fbff;
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.subscription-hero {
+  padding: 48px 20px 34px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef7ff 0%,
+      #ffffff 50%,
+      #eef6ff 100%
+    );
+
+  border-bottom: 1px solid #e2edf8;
+}
+
+.step-label {
+  display: inline-flex;
+
+  padding: 6px 12px;
+  margin-bottom: 15px;
+
+  border-radius: 20px;
+
+  background: #e8f1ff;
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.subscription-hero h1 {
+  margin: 0;
+
+  font-size: 34px;
+  line-height: 1.2;
+
+  color: #172033;
+  font-weight: 700;
+}
+
+.subscription-hero h1 span {
+  color: #2563eb;
+}
+
+.subscription-hero p {
+  margin: 12px 0 18px;
+
+  color: #64748b;
+  font-size: 15px;
+}
+
+.billing-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 7px 13px;
+
+  background: #ffffff;
+  border: 1px solid #dce8f5;
+  border-radius: 7px;
+}
+
+.billing-label span {
+  color: #1e40af;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.billing-label small {
+  padding-left: 9px;
+
+  border-left: 1px solid #dce3ec;
+
+  color: #64748b;
+  font-size: 11px;
+}
+
+/* =========================
+   PLANS
+========================= */
+
+.plans-section {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+  padding: 42px 24px 35px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================
+   PLAN CARD
+========================= */
+
+.plan-card {
+  position: relative;
+
+  padding: 27px 25px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8f2;
+  border-radius: 13px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #b9d2f2;
+
+  box-shadow:
+    0 12px 30px rgba(30, 80, 130, 0.09);
+}
+
+.plan-card.selected {
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.10);
+}
+
+.plan-card.popular {
+  padding-top: 34px;
+}
+
+/* =========================
+   POPULAR BADGE
+========================= */
+
+.popular-badge {
+  position: absolute;
+
+  top: -12px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 5px 13px;
+
+  border-radius: 20px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   PLAN TOP
+========================= */
+
+.plan-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.plan-top h3 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.plan-top p {
+  margin: 8px 0 0;
+
+  min-height: 42px;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+/* =========================
+   RADIO
+========================= */
+
+.plan-radio {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+}
+
+.plan-card.selected .plan-radio {
+  border-color: #2563eb;
+}
+
+.plan-radio-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.plan-price {
+  margin-top: 23px;
+
+  display: flex;
+  align-items: baseline;
+
+  gap: 6px;
+}
+
+.plan-price strong {
+  color: #172033;
+
+  font-size: 29px;
+  font-weight: 750;
+}
+
+.plan-price span {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+/* =========================
+   STUDENT LIMIT
+========================= */
+
+.student-limit {
+  display: inline-flex;
+
+  margin-top: 10px;
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+  color: #1d4ed8;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.plan-divider {
+  height: 1px;
+
+  margin: 21px 0;
+
+  background: #e8eef5;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.plan-features {
+  min-height: 235px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  color: #475569;
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.plan-features svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+/* =========================
+   SELECT BUTTON
+========================= */
+/* Make all plan cards equal height */
+.plans-grid {
+  align-items: stretch;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Take remaining space so buttons reach same bottom */
+.plan-features {
+  flex: 1;
+}
+
+/* Keep all buttons at exact same bottom level */
+.plan-select-btn {
+  margin-top: auto;
+}
+.plan-card {
+  height: 100%;
+  box-sizing: border-box;
+}
+.plan-select-btn {
+  width: 100%;
+
+  margin-top: 22px;
+  padding: 11px 16px;
+
+  border: 1px solid #2563eb;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.plan-select-btn:hover {
+  background: #eff6ff;
+}
+
+.plan-select-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   BOTTOM ACTIONS
+========================= */
+
+.subscription-actions {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 38px auto 0;
+  padding: 13px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #dce7f2;
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 28px rgba(30, 70, 110, 0.10);
+
+  position: sticky;
+  bottom: 15px;
+
+  z-index: 50;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.subscription-back-btn,
+.subscription-continue-btn {
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.subscription-back-btn {
+  padding: 0 22px;
+
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+
+  color: #475569;
+}
+
+.subscription-back-btn:hover {
+  background: #f8fafc;
+
+  transform: translateY(-1px);
+}
+
+.subscription-continue-btn {
+  padding: 0 24px;
+
+  background: #2563eb;
+  border: 1px solid #2563eb;
+
+  color: #ffffff;
+}
+
+.subscription-continue-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.20);
+}
+
+/* =========================
+   NOTE
+========================= */
+
+.subscription-note {
+  margin: 14px 0 0;
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+  }
+
+  .plan-features {
+    min-height: auto;
+  }
+
+  .subscription-header {
+    padding: 0 22px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .subscription-header {
+    min-height: auto;
+
+    padding: 16px;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    align-items: flex-start;
+  }
+
+  .secure-badge {
+    align-self: flex-start;
+  }
+
+  .subscription-hero {
+    padding: 35px 18px 28px;
+  }
+
+  .subscription-hero h1 {
+    font-size: 27px;
+  }
+
+  .subscription-hero p {
+    font-size: 13px;
+  }
+
+  .plans-section {
+    padding: 30px 15px;
+  }
+
+  .plan-card {
+    padding: 23px 19px;
+  }
+
+  .plan-card.popular {
+    padding-top: 30px;
+  }
+
+  .subscription-actions {
+    flex-direction: column;
+
+    bottom: 10px;
+
+    padding: 11px;
+  }
+
+  .subscription-back-btn,
+  .subscription-continue-btn {
+    width: 100%;
+  }
+}
+/* =========================
+   SCROLL TO DETAILS BUTTON
+========================= */
+
+.scroll-details-btn {
+  margin: 30px auto 0;
+
+  padding: 10px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid #cbdcf0;
+  border-radius: 8px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.scroll-details-btn:hover {
+  background: #eff6ff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.10);
+}
+
+.scroll-details-btn svg {
+  animation: scrollArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+
+/* =========================
+   SELECTED PLAN DETAILS
+========================= */
+
+.selected-plan-details {
+  width: 100%;
+
+  padding: 75px 30px 100px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #ffffff 100%
+    );
+
+  scroll-margin-top: 20px;
+}
+
+.details-heading {
+  max-width: 800px;
+
+  margin: 0 auto 30px;
+
+  text-align: center;
+}
+
+.details-tag {
+  display: inline-flex;
+
+  padding: 6px 12px;
+
+  background: #eaf2ff;
+
+  color: #2563eb;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 0.7px;
+}
+
+.details-heading h2 {
+  margin: 10px 0 8px;
+
+  color: #172033;
+
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.details-heading h2 span {
+  color: #2563eb;
+}
+
+.details-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   SELECTED PLAN SUMMARY
+========================= */
+
+.selected-plan-summary {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto 35px;
+
+  padding: 25px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  background: #ffffff;
+
+  border: 2px solid #2563eb;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.09);
+}
+
+.selected-plan-info {
+  flex: 1;
+}
+
+.selected-label {
+  color: #2563eb;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.selected-plan-info h3 {
+  margin: 6px 0 5px;
+
+  color: #172033;
+
+  font-size: 25px;
+}
+
+.selected-plan-info p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.selected-plan-price {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 3px;
+}
+
+.selected-plan-price strong {
+  color: #172033;
+
+  font-size: 27px;
+}
+
+.selected-plan-price span {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.selected-plan-price small {
+  margin-top: 5px;
+
+  padding: 5px 9px;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 650;
+}
+
+
+/* =========================
+   PLAN DETAILS GRID
+========================= */
+
+.plan-detail-grid {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.plan-detail-card {
+  padding: 23px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8f2;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 22px rgba(30, 70, 110, 0.05);
+}
+
+.detail-card-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding-bottom: 15px;
+
+  margin-bottom: 16px;
+
+  border-bottom: 1px solid #e8eef5;
+}
+
+.detail-heading-icon {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ecfdf3;
+
+  color: #16a34a;
+
+  border-radius: 8px;
+}
+
+.detail-heading-icon.cross {
+  background: #fff1f2;
+
+  color: #dc2626;
+}
+
+.detail-card-heading h3 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 15px;
+}
+
+.detail-card-heading p {
+  margin: 3px 0 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+}
+
+.plan-detail-card ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.plan-detail-card li {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #475569;
+
+  font-size: 11px;
+}
+
+.check-circle,
+.cross-circle {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.check-circle {
+  background: #ecfdf3;
+
+  color: #16a34a;
+}
+
+.cross-circle {
+  background: #fff1f2;
+
+  color: #dc2626;
+}
+
+.all-features-message {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px;
+
+  background: #ecfdf3;
+
+  color: #15803d;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-section {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 70px auto 0;
+}
+
+.details-heading.small {
+  margin-bottom: 23px;
+}
+
+.benefits-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.benefit-item {
+  padding: 21px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8f2;
+
+  border-radius: 11px;
+}
+
+.benefit-number {
+  margin-bottom: 12px;
+
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.benefit-item h3 {
+  margin: 0 0 7px;
+
+  color: #172033;
+
+  font-size: 14px;
+}
+
+.benefit-item p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================
+   COMPARISON
+========================= */
+
+.plan-comparison {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 75px auto 0;
+}
+
+.comparison-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dce7f2;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 24px rgba(30, 70, 110, 0.06);
+}
+
+.comparison-table {
+  width: 100%;
+
+  min-width: 720px;
+
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 14px;
+
+  border-bottom: 1px solid #e8eef5;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  width: 42%;
+
+  text-align: left;
+}
+
+.comparison-table thead th {
+  padding: 16px 14px;
+
+  background: #f8fbff;
+
+  color: #172033;
+
+  font-size: 12px;
+}
+
+.comparison-table tbody td:first-child {
+  color: #475569;
+
+  font-weight: 550;
+}
+
+.comparison-selected {
+  background: #f3f7ff !important;
+
+  box-shadow:
+    inset 1px 0 #d7e5fa,
+    inset -1px 0 #d7e5fa;
+}
+
+.compare-check,
+.compare-cross {
+  width: 21px;
+  height: 21px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.compare-check {
+  background: #ecfdf3;
+
+  color: #16a34a;
+}
+
+.compare-cross {
+  background: #fff1f2;
+
+  color: #dc2626;
+}
+
+
+/* =========================
+   PLAN DIFFERENCES
+========================= */
+
+.plan-differences {
+  margin-top: 22px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.difference-card {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8f2;
+
+  border-radius: 10px;
+}
+
+.difference-card.highlighted {
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 8px 22px rgba(37, 99, 235, 0.08);
+}
+
+.difference-card h3 {
+  margin: 0 0 12px;
+
+  color: #172033;
+
+  font-size: 15px;
+}
+
+.difference-card ul {
+  margin: 0;
+
+  padding-left: 18px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+.difference-card li {
+  padding-left: 2px;
+}
+
+
+/* =========================
+   FINAL SUBSCRIPTION
+========================= */
+
+.final-subscription-action {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 50px auto 0;
+
+  padding: 17px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce7f2;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 28px rgba(30, 70, 110, 0.09);
+}
+
+.final-subscription-action span {
+  color: #64748b;
+
+  font-size: 9px;
+}
+
+.final-subscription-action h3 {
+  margin: 3px 0;
+
+  color: #172033;
+
+  font-size: 16px;
+}
+
+.final-subscription-action p {
+  margin: 0;
+
+  color: #2563eb;
+
+  font-size: 10px;
+}
+
+.final-subscription-action button {
+  min-height: 42px;
+
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.final-subscription-action button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .plan-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-differences {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-plan-summary {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .selected-plan-price {
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .selected-plan-details {
+    padding: 55px 16px 70px;
+  }
+
+  .details-heading h2 {
+    font-size: 25px;
+  }
+
+  .selected-plan-summary {
+    padding: 20px;
+  }
+
+  .plan-detail-card {
+    padding: 18px;
+  }
+
+  .final-subscription-action {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .final-subscription-action button {
+    width: 100%;
+  }
+
+  .scroll-details-btn {
+    width: 100%;
+  }
+}

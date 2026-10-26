@@ -1,0 +1,891 @@
+/* =========================================================
+   STUDENT REGISTRATION
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.student-registration .form-main-heading {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(220px, 300px)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.student-registration
+.student-heading-content {
+  min-width: 0;
+}
+
+.student-registration
+.student-heading-content h2 {
+  margin: 0 0 6px;
+
+  line-height: 1.25;
+}
+
+.student-registration
+.student-heading-content p {
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INFORMATION NOTE
+   ========================================================= */
+
+.student-registration
+.student-info-note {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  padding: 12px 14px;
+
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 8px;
+
+  color: #1e40af;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.student-registration
+.student-info-note svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   STUDENT VERIFICATION SECTION
+   ========================================================= */
+
+.student-registration
+.student-verification-section {
+  margin-bottom: 18px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   VERIFICATION ICON
+   ========================================================= */
+
+.student-registration
+.section-title-icon.verification {
+  background: #ecfdf5;
+
+  color: #059669;
+}
+
+
+/* =========================================================
+   VERIFICATION CONTENT
+   ========================================================= */
+
+.student-registration
+.student-verification-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   VERIFICATION BLOCK
+   ========================================================= */
+
+.student-registration
+.verification-block {
+  width: 100%;
+}
+
+
+/* =========================================================
+   MAIN LABEL
+   ========================================================= */
+
+.student-registration
+.verification-main-label {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.student-registration
+.verification-main-label span {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   HELP TEXT
+   ========================================================= */
+
+.student-registration
+.verification-help {
+  margin: 0 0 10px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   TWO COLUMN FIELDS
+   ========================================================= */
+
+.student-registration
+.verification-two-column {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+   ========================================================= */
+
+.student-registration
+.verification-two-column
+.form-group {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   OTP METHOD
+   ========================================================= */
+
+.student-registration
+.otp-method-section {
+  width: 100%;
+}
+
+.student-registration
+.otp-method-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   OTP METHOD CARD
+   ========================================================= */
+
+.student-registration
+.otp-method-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  min-height: 68px;
+
+  padding: 12px 42px 12px 13px;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.student-registration
+.otp-method-card:hover {
+  border-color: #93c5fd;
+
+  background: #f8fbff;
+}
+
+.student-registration
+.otp-method-card.selected {
+  border-color: #2563eb;
+
+  background: #eff6ff;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(37, 99, 235, 0.08);
+}
+
+.student-registration
+.otp-method-card > svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+}
+
+.student-registration
+.otp-method-card > div:not(.otp-method-radio) {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.student-registration
+.otp-method-card strong {
+  color: #1e293b;
+
+  font-size: 13px;
+}
+
+.student-registration
+.otp-method-card span {
+  color: #64748b;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   OTP RADIO
+   ========================================================= */
+
+.student-registration
+.otp-method-radio {
+  position: absolute;
+
+  top: 50%;
+
+  right: 14px;
+
+  width: 18px;
+
+  height: 18px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.student-registration
+.otp-method-card.selected
+.otp-method-radio {
+  border-color: #2563eb;
+}
+
+.student-registration
+.otp-method-radio div {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+
+/* =========================================================
+   SEND OTP
+   ========================================================= */
+
+.student-registration
+.otp-action-row {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: -6px;
+}
+
+.student-registration
+.send-otp-btn {
+  min-width: 150px;
+
+  min-height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.student-registration
+.send-otp-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px
+    rgba(37, 99, 235, 0.18);
+}
+
+.student-registration
+.send-otp-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   OTP VERIFICATION BOX
+   ========================================================= */
+
+.student-registration
+.otp-verification-box {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    150px;
+
+  gap: 12px;
+
+  align-items: end;
+
+  padding: 14px;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 9px;
+
+  background: #f8fbff;
+}
+
+
+/* =========================================================
+   OTP INPUT
+   ========================================================= */
+
+.student-registration
+.otp-input-content label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.student-registration
+.otp-input-content label span {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   VERIFY OTP BUTTON
+   ========================================================= */
+
+.student-registration
+.verify-otp-btn {
+  min-height: 43px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.student-registration
+.verify-otp-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+.student-registration
+.verify-otp-btn.verified {
+  background: #16a34a;
+
+  border-color: #16a34a;
+
+  cursor: default;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+.student-registration
+.student-verification-success {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 8px;
+
+  background: #f0fdf4;
+
+  color: #166534;
+}
+
+.student-registration
+.student-verification-success > svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+}
+
+.student-registration
+.student-verification-success div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.student-registration
+.student-verification-success strong {
+  font-size: 13px;
+}
+
+.student-registration
+.student-verification-success span {
+  font-size: 12px;
+
+  color: #15803d;
+}
+
+
+/* =========================================================
+   LOCKED SECTIONS
+   ========================================================= */
+
+.student-registration
+.locked-section {
+  opacity: 0.72;
+
+  transition: opacity 0.2s ease;
+}
+
+.student-registration
+.locked-section input:disabled,
+.student-registration
+.locked-section select:disabled {
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   STUDENT GRID
+   ========================================================= */
+
+.student-registration
+.student-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px 18px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar {
+  align-items: stretch;
+}
+
+.student-registration
++ .registration-sidebar
+.sidebar-card {
+  height: 100%;
+}
+
+
+/* =========================================================
+   VERIFICATION CARD
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar
+.student-access-card {
+  border-top: 3px solid #2563eb;
+}
+
+.student-registration
++ .registration-sidebar
+.student-access-card
+.sidebar-icon {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   SERVICES CARD
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar
+.student-services-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.student-registration
++ .registration-sidebar
+.student-services-card
+.sidebar-icon {
+  background: #fffbeb;
+
+  color: #d97706;
+}
+
+
+/* =========================================================
+   IMPORTANT CARD
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar
+.student-important-card {
+  border-top: 3px solid #f97316;
+}
+
+.student-registration
++ .registration-sidebar
+.student-important-card
+.sidebar-icon {
+  background: #fff7ed;
+
+  color: #ea580c;
+}
+
+
+/* =========================================================
+   SERVICES LIST
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar
+.permission-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.student-registration
++ .registration-sidebar
+.permission-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+.student-registration
++ .registration-sidebar
+.permission-list li svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   IMPORTANT INFORMATION LIST
+   ========================================================= */
+
+.student-registration
++ .registration-sidebar
+.student-important-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.student-registration
++ .registration-sidebar
+.student-important-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.student-registration
++ .registration-sidebar
+.student-important-list li svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .student-registration
+  .form-main-heading {
+    grid-template-columns:
+      auto
+      minmax(200px, 1fr);
+  }
+
+  .student-registration
+  .student-info-note {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 780px) {
+
+  .student-registration
+  .form-main-heading {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .student-registration
+  .student-info-note {
+    grid-column: auto;
+  }
+
+  .student-registration
+  .verification-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .student-registration
+  .otp-method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-registration
+  .otp-action-row {
+    justify-content: stretch;
+  }
+
+  .student-registration
+  .send-otp-btn {
+    width: 100%;
+  }
+
+  .student-registration
+  .otp-verification-box {
+    grid-template-columns: 1fr;
+  }
+
+  .student-registration
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .student-registration
+  .student-info-note {
+    padding: 11px 12px;
+
+    font-size: 12px;
+  }
+
+  .student-registration
+  .otp-method-card {
+    min-height: 64px;
+  }
+
+  .student-registration
+  .send-otp-btn,
+  .student-registration
+  .verify-otp-btn {
+    min-height: 42px;
+  }
+
+}

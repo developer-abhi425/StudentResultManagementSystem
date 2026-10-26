@@ -1,0 +1,522 @@
+/* =========================================================
+   DATA ENTRY REGISTRATION
+   ========================================================= */
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.data-entry-registration .form-main-heading {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(220px, 300px)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.data-entry-registration .data-entry-heading-content {
+  min-width: 0;
+}
+
+.data-entry-registration .data-entry-heading-content h2 {
+  margin: 0 0 6px;
+
+  line-height: 1.25;
+}
+
+.data-entry-registration .data-entry-heading-content p {
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   INFORMATION NOTE
+   ========================================================= */
+
+.data-entry-registration .data-entry-info-note {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  margin: 0;
+  padding: 12px 14px;
+
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 8px;
+
+  color: #1e40af;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.data-entry-registration .data-entry-info-note svg {
+  flex-shrink: 0;
+}
+
+.data-entry-registration .data-entry-info-note span {
+  min-width: 0;
+}
+
+/* =========================================================
+   ACCESS VERIFICATION SECTION
+   ========================================================= */
+
+.data-entry-registration .data-entry-access-section {
+  margin-bottom: 18px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   ACCESS VERIFICATION GRID
+   ========================================================= */
+
+.data-entry-registration .access-verification-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    220px;
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   ACCESS CODE FIELD
+   ========================================================= */
+
+.data-entry-registration .access-code-group {
+  min-width: 0;
+}
+
+.data-entry-registration .access-code-group small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   VERIFY ACCESS BOX
+   ========================================================= */
+
+.data-entry-registration .verify-access-box {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  justify-content: flex-start;
+
+  min-width: 0;
+
+  padding-top: 24px;
+}
+
+/* =========================================================
+   VERIFY MESSAGE
+   ========================================================= */
+
+.data-entry-registration .verify-access-message {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 6px;
+
+  min-height: 34px;
+
+  margin-bottom: 17px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+.data-entry-registration .verify-access-message svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #2563eb;
+}
+
+.data-entry-registration .verify-access-message span {
+  display: block;
+}
+
+/* =========================================================
+   VERIFY ACCESS BUTTON
+   ========================================================= */
+
+.data-entry-registration .verify-access-btn {
+  width: 100%;
+
+  min-height: 44px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.data-entry-registration .verify-access-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.18);
+
+  transform: translateY(-1px);
+}
+
+.data-entry-registration .verify-access-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.data-entry-registration .verify-access-btn.verified {
+  background: #16a34a;
+
+  border-color: #16a34a;
+
+  cursor: default;
+}
+
+.data-entry-registration .verify-access-btn.verified:hover {
+  background: #15803d;
+
+  border-color: #15803d;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   LOCKED SECTIONS
+   ========================================================= */
+
+.data-entry-registration .locked-section {
+  opacity: 0.72;
+
+  transition: opacity 0.2s ease;
+}
+
+.data-entry-registration .locked-section input:disabled,
+.data-entry-registration .locked-section select:disabled {
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   DATA ENTRY GRID
+   ========================================================= */
+
+.data-entry-registration .data-entry-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px 18px;
+}
+
+/* =========================================================
+   ACCESS ICON
+   ========================================================= */
+
+.data-entry-registration .section-title-icon.access {
+  background: #ecfdf5;
+
+  color: #059669;
+}
+
+/* =========================================================
+   SIDEBAR CARD COLORS
+   ========================================================= */
+
+.data-entry-registration + .registration-sidebar .data-entry-access-card {
+  border-top: 3px solid #2563eb;
+}
+
+.data-entry-registration
+  + .registration-sidebar
+  .data-entry-responsibilities-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.data-entry-registration + .registration-sidebar .data-entry-important-card {
+  border-top: 3px solid #f97316;
+}
+
+/* =========================================================
+   ACCESS DETAILS ICON
+   ========================================================= */
+
+.data-entry-registration
+  + .registration-sidebar
+  .data-entry-access-card
+  .sidebar-icon {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+/* =========================================================
+   RESPONSIBILITIES ICON
+   ========================================================= */
+
+.data-entry-registration
+  + .registration-sidebar
+  .data-entry-responsibilities-card
+  .sidebar-icon {
+  background: #fffbeb;
+
+  color: #d97706;
+}
+
+/* =========================================================
+   IMPORTANT ICON
+   ========================================================= */
+
+.data-entry-registration
+  + .registration-sidebar
+  .data-entry-important-card
+  .sidebar-icon {
+  background: #fff7ed;
+
+  color: #ea580c;
+}
+
+/* =========================================================
+   RESPONSIBILITIES LIST
+   ========================================================= */
+
+.data-entry-registration + .registration-sidebar .permission-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.data-entry-registration + .registration-sidebar .permission-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+.data-entry-registration + .registration-sidebar .permission-list li svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+/* =========================================================
+   IMPORTANT INFORMATION LIST
+   ========================================================= */
+
+.data-entry-registration + .registration-sidebar .data-entry-important-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.data-entry-registration + .registration-sidebar .data-entry-important-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.data-entry-registration
+  + .registration-sidebar
+  .data-entry-important-list
+  li
+  svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+/* =========================================================
+   SIDEBAR CARD HEIGHT
+   ========================================================= */
+
+.data-entry-registration + .registration-sidebar {
+  align-items: stretch;
+}
+
+.data-entry-registration + .registration-sidebar .sidebar-card {
+  height: 100%;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .data-entry-registration .form-main-heading {
+    grid-template-columns:
+      auto
+      minmax(200px, 1fr);
+  }
+
+  .data-entry-registration .data-entry-info-note {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 780px) {
+  .data-entry-registration .form-main-heading {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .data-entry-registration .data-entry-info-note {
+    grid-column: auto;
+  }
+
+  .data-entry-registration .access-verification-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .data-entry-registration .verify-access-box {
+    padding-top: 0;
+  }
+
+  .data-entry-registration .data-entry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+  .data-entry-registration .data-entry-info-note {
+    padding: 11px 12px;
+
+    font-size: 12px;
+  }
+
+  .data-entry-registration .verify-access-message {
+    font-size: 11px;
+  }
+
+  .data-entry-registration .verify-access-btn {
+    min-height: 42px;
+  }
+
+  .data-entry-registration
+    + .registration-sidebar
+    .data-entry-important-list
+    li,
+  .data-entry-registration + .registration-sidebar .permission-list li {
+    font-size: 12px;
+  }
+}

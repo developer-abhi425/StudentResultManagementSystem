@@ -1,0 +1,703 @@
+/* =========================================================
+   FACULTY REGISTRATION
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.faculty-registration .form-main-heading {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(220px, 300px)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.faculty-registration
+.faculty-heading-content {
+  min-width: 0;
+}
+
+.faculty-registration
+.faculty-heading-content h2 {
+  margin: 0 0 6px;
+
+  line-height: 1.25;
+}
+
+.faculty-registration
+.faculty-heading-content p {
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INFORMATION NOTE
+   ========================================================= */
+
+.faculty-registration
+.faculty-info-note {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  margin: 0;
+
+  padding: 12px 14px;
+
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 8px;
+
+  color: #1e40af;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.faculty-registration
+.faculty-info-note svg {
+  flex-shrink: 0;
+}
+
+.faculty-registration
+.faculty-info-note span {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   FACULTY ACCESS SECTION
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-section {
+  margin-bottom: 18px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   ACCESS CODE GROUP
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-code-group {
+  width: 100%;
+}
+
+
+/* =========================================================
+   ACCESS LABEL
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-label-row {
+  margin-bottom: 8px;
+}
+
+.faculty-registration
+.faculty-access-label-row label {
+  display: block;
+
+  margin: 0;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.faculty-registration
+.faculty-access-label-row label span {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   INPUT + BUTTON
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    170px;
+
+  gap: 12px;
+
+  align-items: stretch;
+
+  width: 100%;
+}
+
+.faculty-registration
+.faculty-access-input {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   VERIFY BUTTON
+   ========================================================= */
+
+.faculty-registration
+.faculty-verify-btn {
+  width: 100%;
+
+  min-height: 44px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.faculty-registration
+.faculty-verify-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px
+    rgba(37, 99, 235, 0.18);
+}
+
+.faculty-registration
+.faculty-verify-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.faculty-registration
+.faculty-verify-btn.verified {
+  background: #16a34a;
+
+  border-color: #16a34a;
+
+  cursor: default;
+}
+
+.faculty-registration
+.faculty-verify-btn.verified:hover {
+  background: #15803d;
+
+  border-color: #15803d;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   ACCESS HELP
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-help {
+  margin-top: 7px;
+}
+
+.faculty-registration
+.faculty-access-help small {
+  display: block;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   LOCKED SECTIONS
+   ========================================================= */
+
+.faculty-registration
+.locked-section {
+  opacity: 0.72;
+
+  transition: opacity 0.2s ease;
+}
+
+.faculty-registration
+.locked-section input:disabled,
+.faculty-registration
+.locked-section select:disabled {
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FACULTY GRID
+   ========================================================= */
+
+.faculty-registration
+.faculty-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px 18px;
+}
+
+
+/* =========================================================
+   ACCESS ICON
+   ========================================================= */
+
+.faculty-registration
+.section-title-icon.access {
+  background: #ecfdf5;
+
+  color: #059669;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar {
+  align-items: stretch;
+}
+
+.faculty-registration
++ .registration-sidebar
+.sidebar-card {
+  height: 100%;
+}
+
+
+/* =========================================================
+   ACCESS CARD
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar
+.faculty-access-card {
+  border-top: 3px solid #2563eb;
+}
+
+.faculty-registration
++ .registration-sidebar
+.faculty-access-card
+.sidebar-icon {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   RESPONSIBILITIES CARD
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar
+.faculty-responsibilities-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.faculty-registration
++ .registration-sidebar
+.faculty-responsibilities-card
+.sidebar-icon {
+  background: #fffbeb;
+
+  color: #d97706;
+}
+
+
+/* =========================================================
+   IMPORTANT CARD
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar
+.faculty-important-card {
+  border-top: 3px solid #f97316;
+}
+
+.faculty-registration
++ .registration-sidebar
+.faculty-important-card
+.sidebar-icon {
+  background: #fff7ed;
+
+  color: #ea580c;
+}
+
+
+/* =========================================================
+   RESPONSIBILITIES LIST
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar
+.permission-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.faculty-registration
++ .registration-sidebar
+.permission-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+.faculty-registration
++ .registration-sidebar
+.permission-list li svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   IMPORTANT INFORMATION LIST
+   ========================================================= */
+
+.faculty-registration
++ .registration-sidebar
+.faculty-important-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.faculty-registration
++ .registration-sidebar
+.faculty-important-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.faculty-registration
++ .registration-sidebar
+.faculty-important-list li svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .faculty-registration
+  .form-main-heading {
+    grid-template-columns:
+      auto
+      minmax(200px, 1fr);
+  }
+
+  .faculty-registration
+  .faculty-info-note {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 780px) {
+
+  .faculty-registration
+  .form-main-heading {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .faculty-registration
+  .faculty-info-note {
+    grid-column: auto;
+  }
+
+  .faculty-registration
+  .faculty-access-input-row {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .faculty-registration
+  .faculty-verify-btn {
+    width: 100%;
+  }
+
+  .faculty-registration
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .faculty-registration
+  .faculty-info-note {
+    padding: 11px 12px;
+
+    font-size: 12px;
+  }
+
+  .faculty-registration
+  .faculty-verify-btn {
+    min-height: 42px;
+  }
+
+}
+/* =========================================================
+   FACULTY ACCESS CODE INPUT - FINAL FIX
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input {
+  position: relative;
+
+  width: 100%;
+  min-height: 44px;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d5deea;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   KEY ICON
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input > svg {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  width: 17px;
+  height: 17px;
+
+  margin: 0;
+
+  transform: translateY(-50%);
+
+  color: #94a3b8;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input input {
+  width: 100%;
+
+  height: 42px;
+
+  margin: 0;
+
+  padding: 0 13px 0 40px !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input input::placeholder {
+  color: #94a3b8;
+
+  opacity: 1;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input:focus-within {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.faculty-registration
+.faculty-access-input:has(input:disabled) {
+  background: #f1f5f9;
+
+  cursor: not-allowed;
+}
+
+.faculty-registration
+.faculty-access-input
+input:disabled {
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}

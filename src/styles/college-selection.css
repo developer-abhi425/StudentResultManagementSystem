@@ -1,0 +1,1056 @@
+/* =========================================
+   COLLEGE SELECTION PAGE
+========================================= */
+
+.college-selection-page {
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  color: #102a56;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.college-selection-hero {
+  min-height: 325px;
+
+  padding: 42px 20px 38px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(235, 247, 255, 0.94),
+      rgba(255, 255, 255, 0.88),
+      rgba(235, 247, 255, 0.94)
+    ),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1800&q=85");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================
+   HERO DECORATION - LEFT
+========================================= */
+
+.college-selection-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: -210px;
+  top: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(183, 222, 252, 0.30);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HERO DECORATION - RIGHT
+========================================= */
+
+.college-selection-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -200px;
+  top: -80px;
+
+  border-radius: 50%;
+
+  background: rgba(183, 222, 252, 0.28);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.college-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   STEP BADGE
+========================================= */
+
+.step-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  padding: 6px 16px;
+
+  color: #145ca8;
+
+  background: #dceeff;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   HERO HEADING
+========================================= */
+
+.college-hero-content h1 {
+  margin: 0;
+
+  color: #102b58;
+
+  font-size: 48px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+.college-hero-content h1 span {
+  color: #147cf1;
+}
+
+
+/* =========================================
+   HERO SUBTITLE
+========================================= */
+
+.college-hero-content p {
+  margin: 10px 0 0;
+
+  color: #526b8b;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.college-search {
+  width: min(800px, 70%);
+
+  height: 59px;
+
+  margin-top: 30px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  position: relative;
+
+  z-index: 3;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid #d6e1ed;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 6px 18px rgba(37, 75, 115, 0.08);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.college-search:focus-within {
+  border-color: #4998f2;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.07),
+    0 8px 20px rgba(37, 75, 115, 0.1);
+}
+
+
+.college-search > svg {
+  flex-shrink: 0;
+
+  color: #31567f;
+}
+
+
+.college-search input {
+  width: 100%;
+
+  height: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #193b67;
+
+  font-size: 15px;
+}
+
+
+.college-search input::placeholder {
+  color: #73869e;
+}
+
+
+/* SEARCH CLEAR */
+
+.college-search button {
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  color: #70839c;
+
+  cursor: pointer;
+}
+
+
+.college-search button:hover {
+  color: #147cf1;
+}
+
+
+/* =========================================
+   COLLEGE LIST
+========================================= */
+
+.college-list {
+  padding: 38px 5.5% 55px;
+
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(205, 232, 255, 0.45),
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(205, 232, 255, 0.45),
+      transparent 16%
+    ),
+    #ffffff;
+}
+
+
+/* =========================================
+   COLLEGE GRID
+========================================= */
+
+.college-grid {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   COLLEGE CARD
+========================================= */
+
+.college-card {
+  min-height: 135px;
+
+  padding: 18px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  position: relative;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e7ef;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 16px rgba(24, 55, 90, 0.055);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.college-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #9fcaf7;
+
+  box-shadow:
+    0 10px 25px rgba(32, 95, 158, 0.11);
+}
+
+
+.college-card.selected {
+  border: 2px solid #147cf1;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f4faff 100%
+    );
+
+  box-shadow:
+    0 9px 25px rgba(20, 124, 241, 0.12);
+}
+
+
+/* =========================================
+   COLLEGE LOGO
+========================================= */
+
+.college-logo {
+  width: 100px;
+
+  height: 85px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.college-logo span {
+  line-height: 1;
+
+  font-weight: 800;
+
+  color: #153e70;
+}
+
+
+/* =========================================
+   NIET
+========================================= */
+
+.college-logo.niet {
+  font-size: 20px;
+}
+
+
+.college-logo.niet span::before {
+  content: "♜";
+
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #ed871a;
+
+  font-size: 27px;
+}
+
+
+/* =========================================
+   ABES
+========================================= */
+
+.college-logo.abes {
+  width: 64px;
+
+  height: 64px;
+
+  background: #a82020;
+
+  border-radius: 2px;
+}
+
+
+.college-logo.abes span {
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   GALGOTIAS
+========================================= */
+
+.college-logo.gu {
+  font-size: 25px;
+}
+
+
+.college-logo.gu span {
+  color: #ed7817;
+}
+
+
+.college-logo.gu span::before {
+  content: "◉";
+
+  display: block;
+
+  margin-bottom: -2px;
+
+  color: #ed7817;
+
+  font-size: 32px;
+}
+
+
+/* =========================================
+   SHARDA
+========================================= */
+
+.college-logo.sharda {
+  font-size: 20px;
+}
+
+
+.college-logo.sharda span {
+  color: #1764ad;
+}
+
+
+/* =========================================
+   JIIT
+========================================= */
+
+.college-logo.jiit {
+  font-size: 23px;
+}
+
+
+.college-logo.jiit span {
+  color: #1782b8;
+}
+
+
+/* =========================================
+   AMITY
+========================================= */
+
+.college-logo.amity {
+  font-size: 14px;
+}
+
+
+.college-logo.amity span {
+  color: #153d72;
+}
+
+
+/* =========================================
+   IIMT
+========================================= */
+
+.college-logo.iimt {
+  font-size: 20px;
+}
+
+
+.college-logo.iimt span {
+  color: #244b78;
+}
+
+
+/* =========================================
+   KIET
+========================================= */
+
+.college-logo.kiet {
+  font-size: 21px;
+}
+
+
+.college-logo.kiet span {
+  color: #175398;
+}
+
+
+/* =========================================
+   AKGEC
+========================================= */
+
+.college-logo.akgec {
+  font-size: 17px;
+}
+
+
+.college-logo.akgec span {
+  color: #263d5a;
+}
+
+
+/* =========================================
+   COLLEGE DETAILS
+========================================= */
+
+.college-details {
+  min-width: 0;
+
+  flex: 1;
+}
+
+
+.college-details h3 {
+  margin: 0 0 7px;
+
+  color: #102d5a;
+
+  font-size: 17px;
+
+  line-height: 1.25;
+
+  font-weight: 750;
+}
+
+
+.college-details p {
+  margin: 0 0 5px;
+
+  color: #58708f;
+
+  font-size: 14px;
+
+  line-height: 1.3;
+}
+
+
+.college-details span {
+  color: #58708f;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   RADIO
+========================================= */
+
+.college-radio {
+  width: 25px;
+
+  height: 25px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 2px solid #b5c5d8;
+
+  border-radius: 50%;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.college-card.selected .college-radio {
+  border-color: #147cf1;
+
+  background: #147cf1;
+}
+
+
+.college-radio-dot {
+  width: 9px;
+
+  height: 9px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   NO COLLEGE
+========================================= */
+
+.no-college {
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #687d99;
+}
+
+
+.no-college h3 {
+  margin: 0 0 7px;
+
+  color: #18385f;
+
+  font-size: 20px;
+}
+
+
+.no-college p {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   ACTION BUTTON CONTAINER
+========================================= */
+
+.college-action-buttons {
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 38px auto 10px;
+
+  padding: 14px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  position: sticky;
+
+  bottom: 15px;
+
+  z-index: 50;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid rgba(210, 224, 239, 0.95);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 30px rgba(26, 70, 110, 0.14);
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.college-back-btn {
+  height: 52px;
+
+  padding: 0 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border: 1px solid #cbd8e7;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #29476d;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.college-back-btn:hover {
+  background: #f1f7ff;
+
+  border-color: #8bbcf1;
+
+  color: #147cf1;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.continue-registration-btn {
+  min-width: 285px;
+
+  height: 52px;
+
+  padding: 0 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #147cf1,
+      #168cf4
+    );
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(20, 124, 241, 0.23);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.continue-registration-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #096bda,
+      #147cf1
+    );
+
+  box-shadow:
+    0 11px 25px rgba(20, 124, 241, 0.29);
+}
+
+
+.continue-registration-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+
+.continue-registration-btn:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   RESPONSIVE - 1150px
+========================================= */
+
+@media (max-width: 1150px) {
+
+  .college-selection-hero {
+    padding-left: 4%;
+
+    padding-right: 4%;
+  }
+
+
+  .college-list {
+    padding-left: 4%;
+
+    padding-right: 4%;
+  }
+
+
+  .college-card {
+    padding: 15px;
+
+    gap: 10px;
+  }
+
+
+  .college-logo {
+    width: 78px;
+  }
+
+
+  .college-details h3 {
+    font-size: 15px;
+  }
+
+
+  .college-details p {
+    font-size: 13px;
+  }
+
+
+  .college-details span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - 850px
+========================================= */
+
+@media (max-width: 850px) {
+
+  .college-selection-hero {
+    min-height: 300px;
+  }
+
+
+  .college-hero-content h1 {
+    font-size: 40px;
+  }
+
+
+  .college-hero-content p {
+    font-size: 19px;
+  }
+
+
+  .college-search {
+    width: 80%;
+  }
+
+
+  .college-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - 600px
+========================================= */
+
+@media (max-width: 600px) {
+
+  .college-selection-hero {
+    min-height: 270px;
+
+    padding: 30px 15px 25px;
+  }
+
+
+  .step-badge {
+    font-size: 12px;
+  }
+
+
+  .college-hero-content h1 {
+    font-size: 31px;
+  }
+
+
+  .college-hero-content p {
+    font-size: 15px;
+  }
+
+
+  .college-search {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 24px;
+  }
+
+
+  .college-search input {
+    font-size: 13px;
+  }
+
+
+  .college-list {
+    padding: 25px 15px 40px;
+  }
+
+
+  .college-grid {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+
+  .college-card {
+    min-height: 110px;
+  }
+
+
+  .college-logo {
+    width: 70px;
+  }
+
+
+  .college-details h3 {
+    font-size: 15px;
+  }
+
+
+  .college-details p {
+    font-size: 13px;
+  }
+
+
+  .college-details span {
+    font-size: 12px;
+  }
+
+
+  /* STICKY BUTTONS */
+
+  .college-action-buttons {
+    flex-direction: column-reverse;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 12px;
+  }
+
+
+  .college-back-btn,
+  .continue-registration-btn {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  .continue-registration-btn {
+    height: 52px;
+  }
+
+
+  .college-back-btn {
+    height: 48px;
+  }
+}
+
+
+/* =========================================
+   HORIZONTAL SCROLL FIX
+========================================= */
+
+html,
+body {
+  overflow-x: hidden;
+}

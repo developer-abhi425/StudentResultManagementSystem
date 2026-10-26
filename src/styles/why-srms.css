@@ -1,0 +1,251 @@
+/* =========================
+   WHY CHOOSE SRMS
+========================= */
+
+.why-srms {
+  width: 100%;
+  padding: 90px 60px;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.why-srms-heading > span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.why-srms-heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.why-srms-heading h2 strong {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.why-srms-heading p {
+  max-width: 680px;
+  margin: 18px auto 50px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================
+   WHY SRMS CARDS CONTAINER
+========================= */
+
+.why-srms-cards {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* =========================
+   WHY SRMS CARD
+========================= */
+
+.why-card {
+  min-height: 250px;
+  padding: 28px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(15, 23, 42, 0.05);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* =========================
+   TOP BLUE HOVER LINE
+========================= */
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #2563eb;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.3s ease;
+}
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #93c5fd;
+  background: #f8fbff;
+
+  box-shadow:
+    0 20px 40px rgba(37, 99, 235, 0.15);
+}
+
+.why-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================
+   CARD ICON
+========================= */
+
+.why-card-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+  font-size: 27px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.why-card:hover .why-card-icon {
+  transform: scale(1.12) rotate(3deg);
+
+  background: #dbeafe;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.why-card h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: color 0.3s ease;
+}
+
+.why-card:hover h3 {
+  color: #2563eb;
+}
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.why-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  transition: color 0.3s ease;
+}
+
+.why-card:hover p {
+  color: #475569;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .why-srms {
+    padding: 75px 30px;
+  }
+
+  .why-srms-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .why-srms {
+    padding: 60px 20px;
+  }
+
+  .why-srms-heading h2 {
+    font-size: 30px;
+  }
+
+  .why-srms-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .why-srms-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .why-srms-heading h2 {
+    font-size: 26px;
+  }
+
+  .why-srms-heading p {
+    font-size: 14px;
+  }
+}

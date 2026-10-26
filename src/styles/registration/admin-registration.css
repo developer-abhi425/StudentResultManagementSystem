@@ -1,0 +1,506 @@
+/* =========================================================
+   SRMS ADMIN REGISTRATION - ADMIN ONLY CSS
+   ========================================================= */
+
+
+/* =========================================================
+   ADMIN INFORMATION NOTE
+   ========================================================= */
+
+.admin-info-note {
+  margin-left: auto;
+  max-width: 315px;
+  padding: 10px 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.admin-info-note svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+
+/* =========================================================
+   ADMIN GRID
+   ========================================================= */
+
+.admin-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   ADMIN LICENSE SECTION
+   ========================================================= */
+
+.section-title-icon.license {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.license-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    180px;
+  gap: 18px 16px;
+  align-items: start;
+}
+
+.license-grid small {
+  display: block;
+  margin-top: 6px;
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   VERIFY LICENSE
+   ========================================================= */
+
+.verify-license-box {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.verify-license-btn {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 11px;
+  border: 1px solid #2563eb;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #ffffff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 11px rgba(37, 99, 235, 0.14);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.verify-license-btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.2);
+}
+
+.verify-license-btn.verified {
+  background: #16a34a;
+  border-color: #16a34a;
+
+  box-shadow: 0 4px 11px rgba(22, 163, 74, 0.15);
+}
+
+.verify-license-btn.verified:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+.verify-license-box small {
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   ADMIN SUBSCRIPTION DETAILS
+   ========================================================= */
+
+.subscription-details-card {
+  border-top: 3px solid #22c55e;
+}
+
+.subscription-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.subscription-info-list > div {
+  min-height: 39px;
+  padding: 8px 0;
+
+  border-bottom: 1px solid #edf1f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.subscription-info-list > div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.subscription-info-list > div:first-child {
+  padding-top: 0;
+}
+
+.subscription-info-list span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #64748b;
+  font-size: 10px;
+}
+
+.subscription-info-list span svg {
+  color: #94a3b8;
+}
+
+.subscription-info-list strong {
+  color: #334155;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.subscription-info-list strong.status-active {
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   ADMIN PERMISSIONS
+   ========================================================= */
+
+.admin-permissions-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.permission-list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.permission-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  color: #475569;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.permission-list li svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   ADMIN IMPORTANT INFORMATION
+   ========================================================= */
+
+.important-card {
+  border-top: 3px solid #f97316;
+}
+
+.important-card > ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.important-card > ul li {
+  margin-bottom: 9px;
+
+  color: #64748b;
+  font-size: 10.5px;
+  line-height: 1.55;
+}
+
+.important-card > ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   HORIZONTAL ADMIN INFORMATION CARDS
+   ========================================================= */
+
+.registration-sidebar
+.subscription-details-card,
+.registration-sidebar
+.admin-permissions-card,
+.registration-sidebar
+.important-card {
+  min-width: 0;
+  height: 100%;
+}
+
+.registration-sidebar
+.subscription-details-card,
+.registration-sidebar
+.admin-permissions-card,
+.registration-sidebar
+.important-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   ADMIN RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .license-grid {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+
+  .verify-license-box {
+    grid-column: 1 / -1;
+  }
+
+  .verify-license-btn {
+    max-width: 250px;
+  }
+
+  .registration-sidebar {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+
+  .registration-sidebar .important-card {
+    grid-column: 1 / -1;
+  }
+}
+
+
+@media (max-width: 780px) {
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .license-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .verify-license-box {
+    grid-column: auto;
+  }
+
+  .verify-license-btn {
+    max-width: none;
+  }
+
+  .admin-info-note {
+    width: 100%;
+    max-width: none;
+
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .registration-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-sidebar .important-card {
+    grid-column: auto;
+  }
+}
+
+
+@media (max-width: 560px) {
+
+  .admin-info-note {
+    font-size: 10px;
+  }
+
+  .license-grid {
+    gap: 15px;
+  }
+}
+/* =========================================================
+   FINAL ADMIN REGISTRATION LAYOUT OVERRIDE
+   FORM FULL WIDTH + INFO CARDS HORIZONTAL
+   ========================================================= */
+
+.registration-container {
+  width: min(1180px, 92%) !important;
+  margin: 24px auto 50px !important;
+}
+
+
+/* ============================
+   FORM + SIDEBAR STACK
+   ============================ */
+
+.registration-layout {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  grid-template-columns: none !important;
+
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+
+
+/* ============================
+   REGISTRATION FORM
+   ============================ */
+
+.registration-layout > .registration-form {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  grid-column: auto !important;
+}
+
+
+/* ============================
+   INFORMATION CARDS CONTAINER
+   ============================ */
+
+.registration-layout > .registration-sidebar {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 18px !important;
+
+  align-items: stretch !important;
+
+  grid-column: auto !important;
+}
+
+
+/* ============================
+   THREE INFORMATION CARDS
+   ============================ */
+
+.registration-sidebar > .sidebar-card {
+  width: 100% !important;
+  height: 100% !important;
+
+  min-width: 0 !important;
+}
+
+
+/* ============================
+   REMOVE OLD SIDEBAR BEHAVIOR
+   ============================ */
+
+.registration-sidebar {
+  position: static !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .registration-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .registration-layout > .registration-form {
+    width: 100% !important;
+  }
+
+  .registration-layout > .registration-sidebar {
+    display: grid !important;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 18px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 780px) {
+
+  .registration-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .registration-layout > .registration-sidebar {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 16px !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .registration-layout > .registration-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+}
